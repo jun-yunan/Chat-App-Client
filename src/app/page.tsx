@@ -5,7 +5,8 @@ import { useState } from 'react';
 import { connect } from 'socket.io-client';
 
 // const socket = connect('http://localhost:3001');
-const socket = connect('https://chat-app-server-js-2230c73bc877.herokuapp.com');
+// const socket = connect('https://chat-app-server-js-2230c73bc877.herokuapp.com');
+const socket = connect('https://chat-app-server-js.vercel.app');
 
 export default function Home() {
     const [username, setUsername] = useState('');
